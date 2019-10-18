@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Sruvey</title>
+    <link rel="stylesheet" type="text/css" href="Stylesheet2.css" />
+  </head>
+  <body>
+      <header id="title">
+        <h1>Survey Form</h1>
+      </header>
+      <div class="container">
+        <p id="description">Let us know what you want to know about Evo</p>
+          <div class="formcontainer">
+          <form id="survey-form" action="index.html" method="post">
+              <div class="formlabels">
+                  <label id="name name-label rightab" for="name">Name:
+                  <input type="text" name="Name" placeholder="Enter Your Name">
+                  </label>
+              </div>
+              <div class="formlabels">
+                  <label id="email email-label rightab" for="name">E-mail:  </label>
+                  <input type="email" name="email" placeholder="Enter Your E-mail">
+              </div>
+              <div class="formlabels">
+                  <label id="number number-label rightab" for="age">Age:  </label>
+                  <input type="number" name="age" min="1" max="110" placeholder="Your Age">
+              </div>
+              <div class="dropdown-meny">
+                  <label id="dropdown rightab" for="level">Your Level:  </label>
+                  <select class="leveldropdown" name="Yourlevel">
+                      <option disabled>Select your Level</option>
+                      <option value="Beginner">Beginner</option>
+                      <option value="Novice">Novice</option>
+                      <option value="Intermediate">Intermediate</option>
+                      <option value="Proficient">Proficient</option>
+                      <option value="Expert">Expert</option>
+                      <option value="Pro-gamer">Pro-Gamer</option>
+                  </select>
+              </div>
+              <div class="userPlan">
+                <label id="userPlanText rightab">Are you going to upcoing Evo?
+                <ul class="userPlanList">
+                  <li><input type="radio" name="userListOption" value="Yes" class="userPlanOption" />Yes</li>
+                  <li><input type="radio" name="userListOption" value="No" class="userPlanOption" />No</li>
+                  <li><input type="radio" name="userListOption" value="Maybe" class="userPlanOption" />Maybe</li>
+                  <li><input type="radio" name="userListOption" value="Want" class="userPlanOption"  />Want to, but can't</li>
+                </ul>
+                </label>
+              </div>
+              <div class="userWish">
+                  <label id="userWish rightab">What do you want to know more about Evo?</label>
+                  <ul class="userWishList">
+                    <li><input type="checkbox" name="userWishOption" class="userWishOption" value="History">History</li>
+                    <li><input type="checkbox" name="userWishOption" class="userWishOption" value="PlayerProfile">Noticeable Player Profile</li>
+                    <li><input type="checkbox" name="userWishOption" class="userWishOption" value="GameDetail">Featured Games Detail</li>
+                    <li><input type="checkbox" name="userWishOption" class="userWishOption" value="Moment">Funny/Memoriable Moments</li>
+                    <li><input type="checkbox" name="userWishOption" class="userWishOption" value="Commentator">Commentators</li>
+                  </ul>
+              </div>
+              <div class="userComment">
+                <label id="userCommentText rightab">Any Comments / Suggestions?</label>
+                <input type="input-field" name="comment" placeholder="Share your thoughts here">
+              </div>
+              <div class="SubmitButton">
+                <button type="submit" name="SubmitButton">Submit</button>
+              </div>
+          </form>
+
+          </div>
+      </div>
+  </body>
+</html>
